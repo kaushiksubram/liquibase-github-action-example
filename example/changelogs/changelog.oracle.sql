@@ -20,6 +20,7 @@ create table company (
     city varchar(30)
 )
 
+    
 --changeset christine:3
 --rollback ALTER TABLE person DROP COLUMN country;
 alter table person add country varchar(2)
@@ -27,4 +28,11 @@ alter table person add country varchar(2)
 --changeset amy:4
 --rollback ALTER TABLE person DROP COLUMN state;
 alter table person add state varchar(2)
+
+--changeset yourname:yourname1
+--rollback DROP TABLE yourname;
+CREATE TABLE yourname (
+    id int primary key,
+    name varchar(50) not null
+)
 
