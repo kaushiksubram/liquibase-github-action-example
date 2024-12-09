@@ -1,5 +1,4 @@
 --liquibase formatted sql
-
 --changeset your.name:1
 --rollback DROP TABLE person;
 create table person (
